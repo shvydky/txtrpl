@@ -35,7 +35,7 @@ var appendCmd = &cobra.Command{
 		}
 		outFile.Write(buffer)
 		if found {
-			line := *replace + "\n"
+			line := *replace + "\r\n"
 			outFile.WriteString(line)
 		}
 

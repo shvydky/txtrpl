@@ -34,7 +34,7 @@ var prependCmd = &cobra.Command{
 			found = !found
 		}
 		if found {
-			line := *replace + "\n"
+			line := *replace + "\r\n"
 			outFile.WriteString(line)
 		}
 		outFile.Write(buffer)
